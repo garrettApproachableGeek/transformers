@@ -260,6 +260,7 @@ _import_structure = {
         "CLVPConfig",
         "CLVPSpeechConfig",
         "CLVPTextConfig",
+        "CLVPTokenizer",
     ],
     "models.codegen": ["CODEGEN_PRETRAINED_CONFIG_ARCHIVE_MAP", "CodeGenConfig", "CodeGenTokenizer"],
     "models.conditional_detr": ["CONDITIONAL_DETR_PRETRAINED_CONFIG_ARCHIVE_MAP", "ConditionalDetrConfig"],
@@ -4410,6 +4411,7 @@ if TYPE_CHECKING:
         CLVPConfig,
         CLVPSpeechConfig,
         CLVPTextConfig,
+        CLVPTokenizer,
     )
     from .models.codegen import CODEGEN_PRETRAINED_CONFIG_ARCHIVE_MAP, CodeGenConfig, CodeGenTokenizer
     from .models.conditional_detr import CONDITIONAL_DETR_PRETRAINED_CONFIG_ARCHIVE_MAP, ConditionalDetrConfig
