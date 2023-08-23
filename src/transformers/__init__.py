@@ -262,6 +262,7 @@ _import_structure = {
         "CLVPProcessor",
         "CLVPSpeechConfig",
         "CLVPTextConfig",
+        "CLVPAutoRegressiveConfig",
         "CLVPTokenizer",
     ],
     "models.codegen": ["CODEGEN_PRETRAINED_CONFIG_ARCHIVE_MAP", "CodeGenConfig", "CodeGenTokenizer"],
@@ -4415,6 +4416,7 @@ if TYPE_CHECKING:
         CLVPProcessor,
         CLVPSpeechConfig,
         CLVPTextConfig,
+        CLVPAutoRegressiveConfig,
         CLVPTokenizer,
     )
     from .models.codegen import CODEGEN_PRETRAINED_CONFIG_ARCHIVE_MAP, CodeGenConfig, CodeGenTokenizer
