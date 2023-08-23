@@ -1459,9 +1459,7 @@ else:
             "CLVP_PRETRAINED_MODEL_ARCHIVE_LIST",
             "CLVPModel",
             "CLVPPreTrainedModel",
-            "CLVPSpeechModel",
             "CLVPSpeechModelWithProjection",
-            "CLVPTextModel",
             "CLVPTextModelWithProjection",
         ]
     )
@@ -5479,9 +5477,7 @@ if TYPE_CHECKING:
             CLVP_PRETRAINED_MODEL_ARCHIVE_LIST,
             CLVPModel,
             CLVPPreTrainedModel,
-            CLVPSpeechModel,
             CLVPSpeechModelWithProjection,
-            CLVPTextModel,
             CLVPTextModelWithProjection,
         )
         from .models.codegen import (
