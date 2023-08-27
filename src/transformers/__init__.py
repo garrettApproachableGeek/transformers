@@ -1459,8 +1459,7 @@ else:
             "CLVP_PRETRAINED_MODEL_ARCHIVE_LIST",
             "CLVPModel",
             "CLVPPreTrainedModel",
-            "CLVPSpeechModelWithProjection",
-            "CLVPTextModelWithProjection",
+            "CLVPTransformerWithProjection",
         ]
     )
     _import_structure["models.codegen"].extend(
@@ -5477,8 +5476,7 @@ if TYPE_CHECKING:
             CLVP_PRETRAINED_MODEL_ARCHIVE_LIST,
             CLVPModel,
             CLVPPreTrainedModel,
-            CLVPSpeechModelWithProjection,
-            CLVPTextModelWithProjection,
+            CLVPTransformerWithProjection,
         )
         from .models.codegen import (
             CODEGEN_PRETRAINED_MODEL_ARCHIVE_LIST,
