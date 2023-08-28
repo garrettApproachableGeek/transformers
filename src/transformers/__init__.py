@@ -254,17 +254,17 @@ _import_structure = {
         "CLIPSegTextConfig",
         "CLIPSegVisionConfig",
     ],
-    "models.code_llama": [],
     "models.clvp": [
         "CLVP_PRETRAINED_CONFIG_ARCHIVE_MAP",
+        "CLVPAutoRegressiveConfig",
         "CLVPConfig",
         "CLVPFeatureExtractor",
         "CLVPProcessor",
         "CLVPSpeechConfig",
         "CLVPTextConfig",
-        "CLVPAutoRegressiveConfig",
         "CLVPTokenizer",
     ],
+    "models.code_llama": [],
     "models.codegen": ["CODEGEN_PRETRAINED_CONFIG_ARCHIVE_MAP", "CodeGenConfig", "CodeGenTokenizer"],
     "models.conditional_detr": ["CONDITIONAL_DETR_PRETRAINED_CONFIG_ARCHIVE_MAP", "ConditionalDetrConfig"],
     "models.convbert": ["CONVBERT_PRETRAINED_CONFIG_ARCHIVE_MAP", "ConvBertConfig", "ConvBertTokenizer"],
@@ -1457,6 +1457,7 @@ else:
     _import_structure["models.clvp"].extend(
         [
             "CLVP_PRETRAINED_MODEL_ARCHIVE_LIST",
+            "CLVPAutoRegressiveLMHeadModel",
             "CLVPModel",
             "CLVPPreTrainedModel",
             "CLVPTransformerWithProjection",
@@ -4408,12 +4409,12 @@ if TYPE_CHECKING:
     )
     from .models.clvp import (
         CLVP_PRETRAINED_CONFIG_ARCHIVE_MAP,
+        CLVPAutoRegressiveConfig,
         CLVPConfig,
         CLVPFeatureExtractor,
         CLVPProcessor,
         CLVPSpeechConfig,
         CLVPTextConfig,
-        CLVPAutoRegressiveConfig,
         CLVPTokenizer,
     )
     from .models.codegen import CODEGEN_PRETRAINED_CONFIG_ARCHIVE_MAP, CodeGenConfig, CodeGenTokenizer
@@ -5474,6 +5475,7 @@ if TYPE_CHECKING:
         )
         from .models.clvp import (
             CLVP_PRETRAINED_MODEL_ARCHIVE_LIST,
+            CLVPAutoRegressiveLMHeadModel,
             CLVPModel,
             CLVPPreTrainedModel,
             CLVPTransformerWithProjection,
