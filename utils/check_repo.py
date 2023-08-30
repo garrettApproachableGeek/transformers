@@ -111,7 +111,6 @@ IGNORE_NON_TESTED = PRIVATE_MODELS.copy() + [
     "BridgeTowerVisionModel",  # No need to test it as it is tested by BridgeTowerModel model.
     "BarkCausalModel",  # Building part of bigger (tested) model.
     "BarkModel",  # Does not have a forward signature - generation tested with integration tests
-    "CLVPAutoRegressiveLMHeadModel",  # Does not need to check since it's just a GPT2 model.
 ]
 
 # Update this list with test files that don't have a tester with a `all_model_classes` variable and which don't
