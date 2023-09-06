@@ -83,15 +83,6 @@ SPECIAL_CASES_TO_ALLOW = {
     "ClapAudioConfig": ["num_classes"],
     # Not used, but providing useful information to users
     "SpeechT5HifiGanConfig": ["sampling_rate"],
-    # used internally by the `GPT2Block`
-    "CLVPAutoRegressiveConfig": [
-        "activation_function",
-        "n_inner",
-        "reorder_and_upcast_attn",
-        "resid_pdrop",
-        "scale_attn_by_inverse_layer_idx",
-        "scale_attn_weights",
-    ],
 }
 
 
