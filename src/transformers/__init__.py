@@ -256,12 +256,11 @@ _import_structure = {
     ],
     "models.clvp": [
         "CLVP_PRETRAINED_CONFIG_ARCHIVE_MAP",
-        "CLVPAutoRegressiveConfig",
-        "CLVPConfig",
+        "ClvpEncoderConfig",
+        "ClvpDecoderConfig",
+        "ClvpConfig",
         "CLVPFeatureExtractor",
         "CLVPProcessor",
-        "CLVPSpeechConfig",
-        "CLVPTextConfig",
         "CLVPTokenizer",
     ],
     "models.code_llama": [],
@@ -1457,10 +1456,12 @@ else:
     _import_structure["models.clvp"].extend(
         [
             "CLVP_PRETRAINED_MODEL_ARCHIVE_LIST",
-            "CLVPAutoRegressiveLMHeadModel",
-            "CLVPModel",
-            "CLVPPreTrainedModel",
-            "CLVPTransformerWithProjection",
+            "ClvpModelForConditionalGeneration",
+            "ClvpForCausalLM",
+            "ClvpModel",
+            "ClvpPreTrainedModel",
+            "ClvpEncoder",
+            "ClvpDecoder",
         ]
     )
     _import_structure["models.codegen"].extend(
@@ -4409,12 +4410,11 @@ if TYPE_CHECKING:
     )
     from .models.clvp import (
         CLVP_PRETRAINED_CONFIG_ARCHIVE_MAP,
-        CLVPAutoRegressiveConfig,
-        CLVPConfig,
+        ClvpEncoderConfig,
+        ClvpDecoderConfig,
+        ClvpConfig,
         CLVPFeatureExtractor,
         CLVPProcessor,
-        CLVPSpeechConfig,
-        CLVPTextConfig,
         CLVPTokenizer,
     )
     from .models.codegen import CODEGEN_PRETRAINED_CONFIG_ARCHIVE_MAP, CodeGenConfig, CodeGenTokenizer
@@ -5475,10 +5475,12 @@ if TYPE_CHECKING:
         )
         from .models.clvp import (
             CLVP_PRETRAINED_MODEL_ARCHIVE_LIST,
-            CLVPAutoRegressiveLMHeadModel,
-            CLVPModel,
-            CLVPPreTrainedModel,
-            CLVPTransformerWithProjection,
+            ClvpModelForConditionalGeneration,
+            ClvpForCausalLM,
+            ClvpModel,
+            ClvpPreTrainedModel,
+            ClvpEncoder,
+            ClvpDecoder,
         )
         from .models.codegen import (
             CODEGEN_PRETRAINED_MODEL_ARCHIVE_LIST,
