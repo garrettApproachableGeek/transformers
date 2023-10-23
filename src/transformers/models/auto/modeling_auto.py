@@ -827,7 +827,6 @@ MODEL_FOR_QUESTION_ANSWERING_MAPPING_NAMES = OrderedDict(
         ("nezha", "NezhaForQuestionAnswering"),
         ("nystromformer", "NystromformerForQuestionAnswering"),
         ("opt", "OPTForQuestionAnswering"),
-        ("phi", "PhiForQuestionAnswering"),
         ("qdqbert", "QDQBertForQuestionAnswering"),
         ("reformer", "ReformerForQuestionAnswering"),
         ("rembert", "RemBertForQuestionAnswering"),
